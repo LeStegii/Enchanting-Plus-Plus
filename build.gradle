@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
         maven {
             name = "forge"
-            url = "http://files.minecraftforge.net/maven"
+            url = "https://maven.minecraftforge.net/"
         }
 
         maven {
@@ -13,19 +13,21 @@ buildscript {
     }
 
     dependencies {
-        classpath "net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT"
+        classpath ('com.anatawa12.forge:ForgeGradle:1.2-1.1.+') {
+            changing = true
+        }
     }
 
 }
 
 repositories {
     maven {
-        name = "Epoxide"
-        url = "http://maven.cubedlc.com"
+        name = "BlameJared"
+        url = "https://maven.blamejared.com/"
     }
     maven {
         name = "Chickenbones"
-        url = "http://chickenbones.net/maven/"
+        url = "https://chickenbones.net/maven/"
     }
 }
 
